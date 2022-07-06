@@ -3,3 +3,82 @@
 To install a theme, place the "chrome" directory from the theme into your Firefox user profile directory. 
 Set toolkit.legacyUserProfileCustomizations.stylesheets to True in about:config and make sure to close all 
 running instances of Firefox for the changes to take effect.
+
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/master/Screenshots/netscape4.png)
+## About
+The RetroThemesFirefox project is a collection of Firefox themes mimicking classic browsers such as Internet Explorer and Netscape.
+This project is a spin off of my previous Redmond-Firefox repo with updated compatibility for the latest Firefox releases.
+
+
+## Requirements
+#### Main theme
+The following are required:
+```
+firefox
+```
+
+## Limitations
+Inherit color support is not currently finished.
+Also the theme was designed with a certain color scheme in mind so it may not display correctly
+with certain color schemes. I'm working on adding inherit functions to the theme and I'm currently 
+designing a script to apply selected colors from the active GTK theme and apply it to the Firefox theme. 
+For now I recommend using my default [Redmond97](https://github.com/matthewmx86/Redmond97) theme.
+
+## Installation
+
+There are two ways to get the theme source files. For convenience I always make a tar package of the repository after any updates so you can download
+the archive instead of cloning the whole repository for every update. You can find the archives [here](https://github.com/matthewmx86/Redmond-Firefox/tree/master/Packages).
+For those who prefer to clone the repository you can download a copy of the repository by the following command:
+
+```
+git clone https://github.com/matthewmx86/RetroThemesFirefox.git
+```
+
+To install, you will first need to find your firefox user profile directory. It is usually the one that ends with ".default".
+To find the correct directory, open a terminal and go to the hidden Firefox directory. Using grep you can view the directories
+ending with ".default".
+```
+cd ~/.mozilla/firefox
+ls | grep default
+```
+In this exmaple I have two directories: one .default and the other .default-release. 
+![Image Screenshot](https://github.com/matthewmx86/Redmond97/blob/master/Screenshots/console.png)
+If you only have one directory ending with .default that one is the correct profile directory and you can skip
+this next step. Otherwise, you can run the following to see which profile is the default.
+```
+firefox -P
+```
+You will then see the following window:
+
+![Image Screenshot](https://github.com/matthewmx86/Redmond97/blob/master/Screenshots/firefox.png)
+
+The selected profile is your default profile, in my case it is the default-release profile.
+
+Once you have found the correct profile directory, you can copy the chrome folder from any of the included themes 
+into your Firefox profile directory. Again, using my example above, to install the Netscape theme
+the command would be:
+```
+cp -aR ~/RetroThemesFirefox/Netscape/Netscape4/* ~/.mozilla/firefox/vugvl4ul.default-release/chrome/
+```
+Or you can use your file manager to copy the chrome directory into your Firefox profile directory.
+
+Note:
+[ If you have not enabled custom user style sheets (userchrome): ]
+1. Navigate to "about:config" in Firefox
+2. Enter the following text in the search box: toolkit.legacyUserProfileCustomizations.stylesheets
+3. Set the option toolkit.legacyUserProfileCustomizations.stylesheets to True
+4. Close all instances of Firefox and the changes will take effect when you restart Firefox
+
+The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.
+
+##Screenshots
+IE5:<br>
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/ie5.png)<br>
+IE6:<br>
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/ie6.png)<br>
+IE7:<br>
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/ie7.png)<br>
+IE8:<br>
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/ie8.png)<br>
+Netscape4:<br>
+![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/netscape4.png)
