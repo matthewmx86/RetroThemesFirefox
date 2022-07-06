@@ -70,19 +70,10 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 
 
 #TabsToolbar-customization-target {
-  /*display: block !important;
-  position: absolute !important;
-  bottom: 2px !important;
-  width: 100vw !important;
-  -moz-appearance: none !important;
-  background-image: url("image/bottom.png") !important;*/
   border: 2px solid #000 !important;
   border-bottom: 0px !important;
+  border-left: 7px solid !important;
   padding-left: 1px !important;
   border-image: url("image/toolbar_handle.png") !important;
-  border-image-slice: 2 2 2 2 !important;
-  /*padding: 0px !important;
-  padding-left: 2px !important;
-  min-height: 27px !important;
-  max-height: 27px !important;*/
+  border-image-slice: 2 2 2 7 !important;
 }
