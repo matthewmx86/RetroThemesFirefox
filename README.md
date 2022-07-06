@@ -4,7 +4,7 @@ To install a theme, place the "chrome" directory from the theme into your Firefo
 Set toolkit.legacyUserProfileCustomizations.stylesheets to True in about:config and make sure to close all 
 running instances of Firefox for the changes to take effect.
 
-![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/master/Screenshots/netscape4.png)
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape4.png)
 ## About
 The RetroThemesFirefox project is a collection of Firefox themes mimicking classic browsers such as Internet Explorer and Netscape.
 This project is a spin off of my previous Redmond-Firefox repo with updated compatibility for the latest Firefox releases.
@@ -26,13 +26,12 @@ For now I recommend using my default [Redmond97](https://github.com/matthewmx86/
 
 ## Installation
 
-There are two ways to get the theme source files. For convenience I always make a tar package of the repository after any updates so you can download
-the archive instead of cloning the whole repository for every update. You can find the archives [here](https://github.com/matthewmx86/Redmond-Firefox/tree/master/Packages).
-For those who prefer to clone the repository you can download a copy of the repository by the following command:
+Clone the repository by the following command:
 
 ```
 git clone https://github.com/matthewmx86/RetroThemesFirefox.git
 ```
+Alternatively you can download the .zip archive of the repo.
 
 To install, you will first need to find your firefox user profile directory. It is usually the one that ends with ".default".
 To find the correct directory, open a terminal and go to the hidden Firefox directory. Using grep you can view the directories
@@ -71,14 +70,14 @@ Note:
 
 The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.
 
-##Screenshots
+##Screenshots<br>
 IE5:<br>
-![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/ie5.png)<br>
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/ie5.png)<br>
 IE6:<br>
-![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/ie6.png)<br>
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/ie6.png)<br>
 IE7:<br>
-![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/ie7.png)<br>
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/ie7.png)<br>
 IE8:<br>
-![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/ie8.png)<br>
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/ie8.png)<br>
 Netscape4:<br>
-![Image Screenshot](https://github.com/matthewmx86/Redmond-Firefox/blob/master/Screenshots/netscape4.png)
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape4.png)
