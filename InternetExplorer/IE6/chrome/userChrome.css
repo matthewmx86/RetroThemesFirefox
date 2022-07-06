@@ -1,0 +1,13 @@
+@import "icons.css";
+/*@import "./css/tabs/tab_icon_colors.css";*/
+@import "statusbar.css";
+@import "toolbars.css";
+@import "identitybox.css"; 
+@import "urlbar.css"; 
+@import "tabs.css";
+
+#main-window {
+   /*background-color: #d4d0c8 !important;*/
+   color: #000 !important;
+}
+

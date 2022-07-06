@@ -1,0 +1,72 @@
+#nav-bar:not(:-moz-lwtheme) {
+  margin-top: 1px !important;
+  padding: 1px !important;
+  background-color: inherit !important;
+  background-image: url("image/toolbar.png");
+  padding-top: 2px !important;
+  border: 2px solid !important;
+  border-left: 7px solid !important;
+  border-image: url("image/toolbar_handle_top.png") !important;
+  border-image-slice: 2 2 2 7 !important;
+}
+
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  -moz-appearance: none !important;
+  margin-bottom: 1px !important;
+  background-color: inherit !important;
+  background-image: url("image/toolbar.png");
+  padding: 1px !important;
+  border: 2px solid !important;
+  border-left: 7px solid !important;
+  border-top: 0px !important;
+  border-image: url("image/toolbar_handle.png") !important;
+  border-image-slice: 2 2 2 7 !important; }
+
+#main-window[uidensity="compact"] toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  margin-bottom: 0px !important;
+}
+
+#toolbar-menubar {
+  -moz-appearance: none !important;
+  background-color: inherit !important;
+  padding: 0px !important;
+  padding-left: 2px !important;
+  border: 2px solid !important;
+  border-left: 7px solid !important;
+  border-right: 43px solid !important;
+  border-bottom: 0px !important;
+  border-image: url("image/menu_bar_handle.png") !important;
+  border-image-slice: 2 43 2 7 !important; }
+
+#main-window[tabsintitlebar="true"] #toolbar-menubar {
+  border: none !important;
+  height: 100% !important;
+  background-image: linear-gradient(to right, #000060,#A1C4E9) !important;
+} 
+
+#main-window[tabsintitlebar="true"] #toolbar-menubar .menubar-text {
+  color: #fff !important;
+}
+/*
+#TabsToolbar .titlebar-buttonbox-container {
+  visibility: collapse !important;
+}*/
+
+#browser {
+   border: solid !important;
+   padding: 0px !important;
+   margin-top: -1px !important;
+   border-width: 2px 2px 2px 2px !important;
+   border-image: url("image/combobox.png") !important;
+   border-image-slice: 2 2 2 2 !important; 
+}
+
+#TabsToolbar-customization-target {
+  padding-left: 3px !important;
+  border: 2px solid #000 !important;
+  border-left: 7px solid !important;
+  border-bottom: 0px !important;
+  padding-left: 1px !important;
+  border-image: url("image/toolbar_handle.png") !important;
+  border-image-slice: 2 2 2 7 !important;
+}
