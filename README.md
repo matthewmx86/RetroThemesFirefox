@@ -48,7 +48,7 @@ firefox -P
 ```
 You will then see the following window:
 
-![Image Screenshot](https://github.com/matthewmx86/Redmond97/blob/master/Screenshots/firefox.png)
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape.png)
 
 The selected profile is your default profile, in my case it is the default-release profile.
 
