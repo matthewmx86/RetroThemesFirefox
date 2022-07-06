@@ -1,5 +1,10 @@
 # RetroThemesFirefox
 <h2>A collection of old browser themes for Firefox.</h2>
+
+
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape.png)
+
+
 To install a theme, place the "chrome" directory from the theme into your Firefox user profile directory. 
 Set toolkit.legacyUserProfileCustomizations.stylesheets to True in about:config and make sure to close all 
 running instances of Firefox for the changes to take effect.
@@ -48,7 +53,7 @@ firefox -P
 ```
 You will then see the following window:
 
-![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape.png)
+![Image Screenshot](https://github.com/matthewmx86/Redmond97/blob/master/Screenshots/firefox.png)
 
 The selected profile is your default profile, in my case it is the default-release profile.
 
