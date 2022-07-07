@@ -1,0 +1,88 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+scrollbar scrollbarbutton {
+    appearance: none !important;
+    min-height: 15px !important;
+    min-width: 15px !important;
+    max-width: 15px !important;
+    max-height: 15px !important;
+}
+
+
+scrollbar[orient = "vertical"] scrollbarbutton[sbattr="scrollbar-up-top"] {
+   background-image: url("img/stepper-up.png") !important;
+   background-size: cover !important;
+}
+
+scrollbar[orient = "vertical"] scrollbarbutton[sbattr="scrollbar-up-top"]:active {
+   background-image: url("img/stepper-up-active.png") !important;
+}
+
+scrollbar[orient = "vertical"] scrollbarbutton[sbattr="scrollbar-down-bottom"] {
+   background-image: url("img/stepper-down.png") !important;
+   background-size: cover !important;
+   min-height: 16px !important;
+}
+
+scrollbar[orient = "vertical"] scrollbarbutton[sbattr="scrollbar-down-bottom"]:active {
+   background-image: url("img/stepper-down-active.png") !important;
+}
+
+
+scrollbar[orient = "horizontal"] scrollbarbutton[sbattr="scrollbar-up-top"] {
+   background-image: url("img/stepper-left.png") !important;
+   background-size: cover !important;
+}
+
+scrollbar[orient = "horizontal"] scrollbarbutton[sbattr="scrollbar-up-top"]:active {
+   background-image: url("img/stepper-left-active.png") !important;
+}
+
+scrollbar[orient = "horizontal"] scrollbarbutton[sbattr="scrollbar-down-bottom"] {
+   background-image: url("img/stepper-right.png") !important;
+   background-size: cover !important;
+   min-width: 16px !important;
+}
+
+scrollbar[orient = "horizontal"] scrollbarbutton[sbattr="scrollbar-down-bottom"]:active {
+   background-image: url("img/stepper-right-active.png") !important;
+}
+
+scrollbar {
+    opacity: 1.0 !important;
+    appearance: none !important;
+    background-color: #c0c0c0;
+}
+
+scrollbar[orient = "vertical"] {
+   border-left: 1px solid !important;
+}
+
+scrollbar[orient = "horizontal"] {
+   border-top: 1px solid !important;
+}
+
+scrollbar thumb {
+    appearance: none !important;
+    background-color: #c0c0c0 !important;
+    border: 1px solid #fff !important;
+    border-right: 2px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
+}
+
+scrollbar thumb[orient = "vertical"] {
+   min-width: 12px !important;
+   box-shadow: 0 1px #000, 0 -1px #000 !important;
+}
+
+scrollbar thumb[orient = "horizontal"] {
+   min-height: 12px !important;
+   box-shadow: 1px 0 #000, -1px 0 #000 !important;
+}
+
+scrollbar:hover thumb {
+    background-color: purple;
+}
+scrollbar thumb:active {
+    background-color: pink;
+}

@@ -2,3 +2,15 @@
  * Do not remove the @namespace line -- it's required for correct functioning
  */
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
+
+
+slider {
+    appearance: initial !important;
+    background-color: #86c0be !important;
+    border: 1px solid #5d9797 !important;
+}
+thumb {
+    appearance: initial !important;
+    background-color: #86c0be !important;
+    border: 1px solid #418bd4 !important;
+}
