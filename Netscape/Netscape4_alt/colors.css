@@ -1,0 +1,11 @@
+@define-color bg_color #c0c0c0;
+@define-color fg_color #000000;
+@define-color base_color #dedede;
+@define-color text_color #000000;
+@define-color selected_bg_color #507eaf;
+@define-color selected_fg_color #ffffff;
+@define-color button_bg_color #c0c0c0;
+@define-color toolbar_bg_color #c0c0c0;
+@define-color toolbar_fg_color @fg_color;
+@define-color menubar_bg_color #efefef;
+@define-color menubar_fg_color #000;
