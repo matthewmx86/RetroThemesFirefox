@@ -98,6 +98,29 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   padding-left: 1px !important;
 }
 
+ #TabsToolbar-customization-target #tabbrowser-arrowscrollbox {
+   padding-top: 2px !important;
+   margin-top: -2px !important;
+   border-right: 1px solid #404040 !important;
+   box-shadow: -3px 0 #000 inset, -2x 0 #c0c0c0 inset !important;
+   }
+
+.notificationbox-stack {
+  padding: 0px !important;
+  border: 0px solid !important;
+  border-top: 2px solid !important;
+  border-left: 9px solid !important;
+  border-image: url("image/toolbar_handle_notif.png") !important;
+  border-image-slice: 2 0 2 9 !important;
+}
+
+.infobar {
+  background-color: inherit !important;
+  border: unset !important;
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
 #TabsToolbar-customization-target {
   width: 100vw !important;
 }

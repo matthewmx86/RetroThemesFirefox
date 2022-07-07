@@ -146,6 +146,25 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
   margin:0px !important;
 }
 
+.close,
+.notification-button,
+.notification-button:hover {
+  color: #000 !important;
+  background-color: unset !important;
+  border-radius: 0 !important;
+  border: 3px solid !important;
+  border-image: url("image/toolbarbutton.png") !important;
+  border-image-slice: 3 3 3 3 !important; 
+}
+
+.close:active
+.notification-button:active {
+  border-radius: 0 !important;
+  border: 3px solid !important;
+  border-image: url("image/toolbarbutton_pressed.png") !important;
+  border-image-slice: 3 3 3 3 !important; 
+}
+
 /* General toolbar button borders */
 .toolbarbutton-animatable-box {
   display: none !important;
@@ -427,6 +446,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   border: 3px solid transparent !important;
   }
 
+#TabsToolbar.browser-toolbar.titlebar-color hbox.toolbar-items hbox#TabsToolbar-customization-target.customization-target toolbarbutton#bookmarks-menu-button.toolbarbutton-1.chromeclass-toolbar-additional.subviewbutton-nav .toolbarbutton-icon,
 #TabsToolbar-customization-target > .chromeclass-toolbar-additional .toolbarbutton-badge-stack {
   padding: 3px !important;
   background-color:inherit !important;
@@ -434,6 +454,8 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   border: 3px solid transparent !important;
 }
 
+
+#TabsToolbar.browser-toolbar.titlebar-color hbox.toolbar-items hbox#TabsToolbar-customization-target.customization-target toolbarbutton#bookmarks-menu-button.toolbarbutton-1.chromeclass-toolbar-additional.subviewbutton-nav:hover .toolbarbutton-icon,
 #TabsToolbar-customization-target > .chromeclass-toolbar-additional:hover .toolbarbutton-badge-stack,
 #TabsToolbar-customization-target #add-ons-button:hover .toolbarbutton-icon {
   filter: sepia(0%) saturate(100%) contrast(120%) !important;
@@ -441,7 +463,6 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important; 
 }
-
 
 #nav-bar #star-button {
   padding: 5px !important;
