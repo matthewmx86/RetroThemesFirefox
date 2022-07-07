@@ -2,7 +2,7 @@
 <h2>A collection of old browser themes for Firefox.</h2>
 
 
-![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape.png)
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape4_alt.png)
 
 
 To install a theme, place the "chrome" directory from the theme into your Firefox user profile directory. 
@@ -84,4 +84,6 @@ IE7:<br>
 IE8:<br>
 ![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/ie8.png)<br>
 Netscape4:<br>
-![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape4.png)
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape4.png)<br>
+Netscape4_alt<br>
+![Image Screenshot](https://github.com/matthewmx86/RetroThemesFirefox/blob/main/Screenshots/netscape4_alt.png)
