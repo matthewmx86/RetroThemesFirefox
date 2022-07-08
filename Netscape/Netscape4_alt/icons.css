@@ -89,22 +89,30 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
   margin-top: 0px !important;
 }
 
+/* Set icon padding for all buttons */
+:-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
+        #privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ) .toolbarbutton-icon {
+  padding: 3px !important;
+}
+
 /* Fix text alignment in find button */
 #main-window[uidensity="compact"] #find-button > .toolbarbutton-text {
  margin-top: 2px !important;
 }
 
 /* Reduce color */
+/*
 #nav-bar .toolbarbutton-1 {
-  /*filter: sepia(0%) saturate(90%) contrast(100%) !important;*/
-}
+  filter: sepia(0%) saturate(90%) contrast(100%) !important;
+}*/
 
 #PersonalToolbar * > .toolbarbutton-icon,
 #TabsToolbar * > .toolbarbutton-icon { 
    filter: sepia(0%) saturate(20%) contrast(80%) !important;
 }
-
-
 
 /*Bookmark buttons */
 #PersonalToolbar toolbarbutton {
@@ -128,7 +136,7 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important; }
-}
+
 
 #main-window #PersonalToolbar toolbarbutton:active {
   border-radius: 0 !important;
@@ -144,6 +152,23 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
 
 #PersonalToolbar toolbarbutton > .toolbarbutton-text {
   margin:0px !important;
+}
+
+/* Replace icons with netscape bookmark icon */
+#PlacesToolbarItems > toolbarbutton:nth-child(1) .toolbarbutton-icon {
+  height: 32px !important;
+  width: 20px !important;
+  filter: sepia(0%) saturate(100%) contrast(100%) !important;
+  list-style-image: url("image/favorite.png") !important;
+}
+
+
+#PlacesChevron .toolbarbutton-icon {
+  padding: 0px !important;
+  height: 26px !important;
+  width: 30px !important;
+  filter: sepia(0%) saturate(100%) contrast(100%) !important;
+  list-style-image: url("image/bookmarks.png") !important;
 }
 
 .close,
@@ -222,15 +247,6 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
   -moz-box-orient: vertical !important;
-}
-
-/* Set icon padding for all buttons */
-:-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
-        #privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
-	#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
-	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
-	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ) .toolbarbutton-icon {
-  padding: 3px !important;
 }
 
 /* Disable transparency for disabled buttons */

@@ -19,7 +19,7 @@
         border: 0px solid transparent !important;
         border-right: 1px solid transparent !important;
         border-top: 1px solid #404040 !important;
-        /*box-shadow: 0 2px #c0c0c0 inset, 1px 3px #505050 inset, -1px -1px #fff inset !important;*/
+        /*box-shadow: 0 2px #c3c3c3 inset, 1px 3px #505050 inset, -1px -1px #fff inset !important;*/
 }
 #statuspanel {
 	visibility: collapse !important;

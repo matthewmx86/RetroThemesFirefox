@@ -102,7 +102,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   bottom: 0px !important;/*var(--tabbar-top) !important;*/
   width: 100vw !important;
   -moz-appearance: none !important;
-  background-color: #c0c0c0 !important;
+  background-color: #c3c3c3 !important;
   border: 0px solid !important;
   border-top: 1px solid #000 !important;
   padding: 0px !important;
@@ -114,7 +114,7 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
    padding-top: 2px !important;
    margin-top: -2px !important;
    border-right: 1px solid #404040 !important;
-   box-shadow: -3px 0 #000 inset, -2x 0 #c0c0c0 inset !important;
+   box-shadow: -3px 0 #000 inset, -2x 0 #c3c3c3 inset !important;
    }
 
 .notificationbox-stack {

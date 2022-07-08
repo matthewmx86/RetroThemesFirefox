@@ -44,16 +44,16 @@
     border-color: unset !important;
     animation-name: none !important;
     animation: none !important;
-    background-image: url("image/comboboxbutton.png") !important;
-    background-repeat: no-repeat !important;
+    /*background-image: url("image/comboboxbutton.png") !important;
+    background-repeat: no-repeat !important;*/
     padding: 2px !important; 
-    background-position: right center !important; 
+    /*background-position: right center !important; */
     box-shadow: none !important;
     border: solid !important;
     border-radius: 0 !important;
-    border-width: 2px 2px 2px 2px !important;
-    border-image: url("image/combobox.png") !important;
-    border-image-slice: 2 2 2 2 !important; 
+    border-width: 2px 26px 2px 2px !important;
+    border-image: url("image/combobox4.png") !important;
+    border-image-slice: 2 26 2 2 !important; 
     height: 26px !important;
 }
 
@@ -63,9 +63,11 @@
 
 #urlbar[open] > #urlbar-background {
     box-shadow: none !important;
-    background-image: url("image/comboboxbutton_pressed.png") !important;
+    border-image: url("image/combobox4_pressed.png") !important;
+    border-image-slice: 2 26 2 2 !important; 
+    /*background-image: url("image/comboboxbutton_pressed.png") !important;
     background-repeat: no-repeat !important;
-    background-position: right center !important;
+    background-position: right center !important;*/
 }
 
 #page-action-buttons {
@@ -198,7 +200,6 @@
     border-radius: 0 !important;
     padding: 0px !important; 
     box-shadow: none !important;
-    background-color: @base_color !important;
     border: solid !important;
     border-radius: 0 !important;
     border-width: 2px 2px 2px 2px !important;
