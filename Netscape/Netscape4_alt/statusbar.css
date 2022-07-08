@@ -1,0 +1,62 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+:root {
+  --statusbar_background_color: grey;
+  --statusbar_font_color: black;
+}
+
+:-moz-any(statuspanel,#statuspanel) {
+  -moz-appearance: none !important;
+  display:block !important;
+  background-color: unset !important;
+  width: unset !important;
+  border: 0 !important;
+}
+
+#browser-bottombox {
+	height: 30px;
+    border: 0px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    border-top: 1px solid #404040 !important;
+    /*box-shadow: 0 2px #c3c3c3 inset, 1px 3px #505050 inset, -1px -1px #fff inset !important;*/
+}
+#statuspanel {
+	height: 25px !important;
+	left: 1px !important;
+	bottom: 0px !important;
+	padding: 0px !important;
+	transition-duration: 0s !important;
+	transition-delay: 0s !important;
+	transition-property: none !important;
+}
+#statuspanel-inner {
+	margin-top: -33px !important;
+	transition-duration: 0s !important;
+	transition-delay: 0s !important;
+	padding: 3px !important;
+	z-index: 99 !important;
+	background-color: #c3c3c3 !important;
+	border: 1px solid #000 !important;
+	/*box-shadow: 2px 2px #c3c3c3 inset, 3px 3px #808080 inset,
+		-2px -2px #c3c3c3 inset, -3px -3px #fff inset !important;
+	*/
+	box-shadow: 1px 1px #808080 inset !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+#statuspanel-label {
+	border: none !important;
+	padding: 0px !important;
+	background: transparent !important;
+}
+
+html[inFullscreen="true"] #browser-bottombox {
+	display:none !important;
+}
+html[inFullscreen="true"] #statuspanel:hover {
+	display: block;
+}
+
+
