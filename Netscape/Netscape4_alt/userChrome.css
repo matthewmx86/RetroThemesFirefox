@@ -1,0 +1,13 @@
+@import "icons.css";
+@import "tabs.css";
+@import "statusbar.css";
+@import "toolbars.css";
+@import "urlbar.css"; 
+@import "library.css";
+@import "bookmarkpanel.css";
+@import "librarywin.css";
+
+#main-window {
+   background-color: #c3c3c3 !important;
+   color: #000 !important;
+}

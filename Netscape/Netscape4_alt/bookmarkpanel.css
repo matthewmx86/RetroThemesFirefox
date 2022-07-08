@@ -1,0 +1,56 @@
+/* Bookmark panel ui */
+
+#editBookmarkPanelRows > vbox > html|input,
+#editBookmarkPanelRows > vbox > hbox > html|input {
+  padding: 1px;
+  border-radius: 0px;
+  border: 1px solid #000;
+  margin: 0;
+}
+
+#editBookmarkPanelRows input,
+#editBMPanel_folderTree:focus-visible,
+#editBMPanel_tagsSelector:focus-visible,
+#editBookmarkPanel .expander-up:focus-visible,
+#editBookmarkPanel .expander-down:focus-visible,
+#editBMPanel_newFolderButton:focus-visible {
+  padding: 2px !important;
+  border: 1px sold #000 !important;
+  outline: none important;
+  border-radius: 0px !important;
+}
+
+#editBookmarkPanelRows input:active {
+  border: unset !important;
+  border: 1px solid #000 !important;
+  outline: 1px solid #000 !important;
+  outline-offset: 0px !important;  
+}
+
+#editBMPanel_folderMenuList {
+  border: 1px sold #000 !important;
+  outline: none !important }
+
+#editBookmarkPanel .expander-up,
+#editBookmarkPanel .expander-down,
+#editBMPanel_folderMenuList,
+#editBMPanel_newFolderButton,
+#editBookmarkPanelBottomButtons > button {
+    min-width: 24px !important;
+    min-height: 24px !important;
+    background-color: #c3c3c3 !important;
+    color: #000 !important;
+    outline: unset !important;
+    border-radius: 0px !important;
+    margin-top: 0;
+    padding: 2px !important;
+    border: 3px solid !important;
+    border-image: url("image/toolbarbutton.png") !important;
+    border-image-slice: 3 3 3 3 !important;
+}
+
+menupopup,
+.menupopup-arrowscrollbox{ 
+    border-radius: 0 !important; }
+    :root{--arrowpanel-border-radius:0px !important;
+    }
