@@ -73,6 +73,9 @@ Note:
 4. Close all instances of Firefox and the changes will take effect when you restart Firefox
 
 The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.
+<br>
+Addons:<br>
+To get the themes scrollbars you will need to install an autoloader such as the one from autoloader-fx. This will allow theming of web content widgets. The repo can be found here: https://github.com/MrOtherGuy/fx-autoconfig
 
 ##Screenshots<br>
 IE5:<br>
