@@ -7,6 +7,7 @@
 }
 
 .tab-background {
+   padding: unset !important;
    border: transparent !important;
    background: transparent;
    color: transparent;
@@ -48,6 +49,7 @@
   border-image-slice: 3 3 3 3 !important; }
 
 .tab-content {
+   padding: unset !important;
    max-height: 20px !important;
    padding-left: 8px !important;
    padding-right: 8px !important;
@@ -72,7 +74,29 @@ spacer[part=overflow-end-indicator] {
    margin-right: 3px !important;
 }
 
+.tabbrowser-tab stack.tab-stack {
+   margin-top: -1px !important;
+}
+
+.tabbrowser-tab[selected="true"] stack.tab-stack {
+   margin-top: 0px !important;
+}
+
+.tab-icon-image {
+   filter: sepia(0%) saturate(20%) contrast(100%);
+   margin-left: -3px !important;
+   margin-right: 3px !important;
+}
+
 .tab-text {
+  font-family: Arial, Helvetica, sans-serif !important;
+  margin-top: -1px !important;
+  font-size: 13px !important;
+}
+/*
+.tab-text {
+   height: 5px !important;
+   max-height: 5px !important;
    top: 0px !important;
    bottom: 0px !important;
    margin-top: -7px !important;
@@ -80,6 +104,7 @@ spacer[part=overflow-end-indicator] {
 }
 
 .tabbrowser-tab[visuallyselected="true"] .tab-text {
+   height: 5px !important;
    top: 0px !important;
    bottom: 0px !important;
    margin-top: -5px !important;
@@ -87,3 +112,4 @@ spacer[part=overflow-end-indicator] {
 }
 
 
+*/ 

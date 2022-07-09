@@ -1,10 +1,3 @@
-/* TABS: height */
-*|*:root {
---menubar-height: 53px;
---bookmarkbar-height: 21.3px;
---tabbar-top: calc(var(--menubar-height) + var(--bookmarkbar-height) + var(--tab-min-height) + 8px); /*89+*/
-}
-
 /* Main browser window navbar */
 #navigator-toolbox toolbar#nav-bar.browser-toolbar {
   margin-top: 0px !important;
@@ -44,16 +37,10 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   background-color: #efefef !important;
   background-image: linear-gradient(to right, #efefef,#efefef) !important;
   color: #000 !important;
-  filter: sepia(0%) saturate(20%) contrast(100%);
   padding: 0px !important;
   padding-left: 2px !important;
   border-bottom: 1px solid #000!important;
-  margin-bottom: 1px !important;
-  /*border-left: 7px solid !important;
-  border-right: 43px solid !important;
-  border-bottom: 0px !important;
-  border-image: url("image/menu_bar_handle.png") !important;
-  border-image-slice: 2 43 2 7 !important;*/ }
+  margin-bottom: 1px !important; }
 
 #main-window[tabsintitlebar="true"] #toolbar-menubar {
   border: none !important;

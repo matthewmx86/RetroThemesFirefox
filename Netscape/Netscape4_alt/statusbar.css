@@ -23,6 +23,7 @@
     /*box-shadow: 0 2px #c3c3c3 inset, 1px 3px #505050 inset, -1px -1px #fff inset !important;*/
 }
 #statuspanel {
+	font-family: Arial, Helvetica, sans-serif !important;
 	height: 25px !important;
 	left: 1px !important;
 	bottom: 0px !important;

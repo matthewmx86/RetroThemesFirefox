@@ -1,5 +1,6 @@
-
-@import "colors.css";
+#urlbar-input {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
 
 /* Disable Megabar Animation */
 #urlbar [role=button] {
@@ -10,7 +11,7 @@
 
 #urlbar-zoom-button {
    background: unset !important;
-   margin-top: 0px !important;
+   margin-top: 1px !important;
 }
 
 * [role=button]:hover {
@@ -59,6 +60,7 @@
 
 #urlbar,
 #urlbar[breakout][breakout-extend][breakout-extend-animate] {
+    margin-top: 1px !important;
     box-shadow: none !important;
     font-weight: normal !important;
     font-family: unset !important;
@@ -102,6 +104,7 @@
 
 .urlbarView {
     padding: 0px !important;
+    margin-top: -1px !important;
     box-shadow: none !important;
     margin-left:0px!important;
     width:100%!important;
@@ -110,25 +113,24 @@
 }
 
 #main-window[uidensity="compact"] .urlbarView {   
-    margin-top: 1px !important;
+    margin-top: -1px !important;
 }
 
 .urlbarView-row .urlbarView-type-icon,
-.urlbarView-row .urlbarView-favicon {
+.urlbarView-row .urlbarView-favicon,
+.urlbarView-tag {
     max-height: 0px !important;
-    visibility: collapse !important;
-}
-
+    visibility: collapse !important; }
+ 
 /* Reduce row paddings to make them more compact */
 .urlbarView-row {
     padding: 0px !important;
-    padding-top: 1px !important;
     border-radius: 0 !important;
-    font-weight: normal !important;
-    font-family: unset !important;
     font-weight: unset !important;
     font-size: unset !important;
     font-weight: normal !important;
+    font-size: unset !important;
+    font-family: Arial, Helvetica, sans-serif !important;
     border-bottom: 0px dotted #000 !important;
 }
 
@@ -146,16 +148,17 @@
  }
 
  .urlbarView-row-inner {
-   background-color: transparent !important;
-   /*margin: 0px !important;
-   margin-bottom: -3px !important;*/
+    background-color: transparent !important;
+
+/*
+ .urlbarView-row-inner {
    padding: 0px !important;
    padding-top: 1px !important;
    padding-bottom: 2px !important;
    padding-left: 5px !important;
    padding-right: 5px !important;
    border-radius: 0px !important;
-}
+}*/
 
 /* Hide this time search with row */
 .search-one-offs {

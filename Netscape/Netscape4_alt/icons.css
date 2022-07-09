@@ -80,13 +80,31 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
 }
 
 /* Buttons to put text next to icons */
+#main-window #back-button > .toolbarbutton-text,
+#main-window #find-button > .toolbarbutton-text,
+#main-window #reload-button > .toolbarbutton-text,
+#main-window #stop-button > .toolbarbutton-text,
+#main-window #library-button > .toolbarbutton-text,
+#main-window #history-panelmenu > .toolbarbutton-text {
+  font-family: Arial, Helvetica, sans-serif !important;
+  margin-top: 1px !important;
+  display: -moz-box !important;
+  margin-left: -3px !important;
+  -moz-box-pack: center !important;
+}
+
 #main-window[uidensity="compact"] #back-button > .toolbarbutton-text,
 #main-window[uidensity="compact"] #find-button > .toolbarbutton-text,
+#main-window[uidensity="compact"] #reload-button > .toolbarbutton-text,
+#main-window[uidensity="compact"] #stop-button > .toolbarbutton-text,
 #main-window[uidensity="compact"] #library-button > .toolbarbutton-text,
 #main-window[uidensity="compact"] #history-panelmenu > .toolbarbutton-text {
-  display: -moz-box !important;
-  margin-left: -5px !important;
-  margin-top: 0px !important;
+  display:none !important;
+}
+
+.toolbarbutton-1[disabled] > .toolbarbutton-text {
+  color: #808080 !important;
+  text-shadow: 1px 1px #fff !important;
 }
 
 /* Set icon padding for all buttons */
@@ -96,6 +114,14 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
 	#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
 	#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ) .toolbarbutton-icon {
   padding: 3px !important;
+}
+
+#main-window[uidensity="compact"] :-moz-any(#back-button,#forward-button,#home-button,#stop-button,#reload-button,#bookmarks-menu-button,#history-panelmenu,
+#privatebrowsing-button,#find-button,#print-button,#fullscreen-button,#developer-button,
+#preferences-button,#cut-button,#copy-button,#paste-button,#zoom-out-button,#zoom-in-button,
+#tabview-button,#email-link-button,#sidebar-button,#web-apps-button,#webide-button,#developer-button,#containers-panelmenu,
+#library-button,#bookmarks-toolbar-placeholder,#nav-bar-overflow-button,#alltabs-button ) .toolbarbutton-icon {
+padding: 1px !important;
 }
 
 /* Fix text alignment in find button */
@@ -227,12 +253,6 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
   border-image-slice: 3 3 3 3 !important;
 }
 
-#main-window:not([uidensity="compact"]) #nav-bar .toolbarbutton-1 > .toolbarbutton-text {
-  /*display: -moz-box !important;*/
-  margin: 0px !important;
-  padding: 0px !important;
-  font-size: 7pt !important; }
-
 #nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
 #nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack {
   border: none !important;
@@ -255,7 +275,7 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) toolbaritem .toolbarbutton-1:not([type="menu-button"]),
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1:not([type="menu-button"]),
 #main-window:not([uidensity="compact"]) toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton{
-  -moz-box-orient: vertical !important;
+  -moz-box-orient: horizontal !important;
 }
 
 /* Disable transparency for disabled buttons */
@@ -278,8 +298,6 @@ toolbar .toolbarbutton-1[type="menu-button"] toolbarbutton[disabled] .toolbarbut
 }
 
 #back-button[disabled] .toolbarbutton-icon {
-  margin-bottom: -3px !important;
-  margin-top: -5px !important;
   list-style-image: url("image/netscape_back_inactive.png") !important;
 }
 
@@ -443,11 +461,13 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 
 
 .tab-content:hover .tab-close-button {
+  height: 18px !important;
+  width: 18px !important;
   visibility: visible !important;
   padding: 3px !important;
   background: unset !important;
   margin-top:  -1px !important;
-  margin-right: -8px !important;
+  margin-right: -7px !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important;
@@ -460,7 +480,8 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 }
 
 .tab-content[selected="true"] .tab-close-button {
-  margin-right: -9px !important;
+  margin-top: -2px !important;
+  margin-right: -7px !important;
 }
 
 
