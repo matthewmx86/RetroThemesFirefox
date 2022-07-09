@@ -123,13 +123,13 @@
 .urlbarView-row {
     padding: 0px !important;
     padding-top: 1px !important;
-    padding-bottom: 1px !important;
     border-radius: 0 !important;
     font-weight: normal !important;
     font-family: unset !important;
     font-weight: unset !important;
     font-size: unset !important;
     font-weight: normal !important;
+    border-bottom: 0px dotted #000 !important;
 }
 
 .urlbarView-row:first-child {
