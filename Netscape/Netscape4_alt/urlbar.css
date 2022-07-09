@@ -1,3 +1,8 @@
+:root {
+    --urlbarView-favicon-width: unset !important;
+    --selected: Highlight;
+}
+
 #urlbar-input {
     font-family: Arial, Helvetica, sans-serif !important;
 }
@@ -11,7 +16,8 @@
 
 #urlbar-zoom-button {
    background: unset !important;
-   margin-top: 1px !important;
+   margin: unset !important;
+   margin-top: 3px !important;
 }
 
 * [role=button]:hover {
@@ -117,13 +123,23 @@
 }
 
 .urlbarView-row .urlbarView-type-icon,
-.urlbarView-row .urlbarView-favicon,
-.urlbarView-tag {
+.urlbarView-row .urlbarView-favicon,.urlbarView-url,
+.urlbarView-tags, .urlbarView-title-separator {
     max-height: 0px !important;
     visibility: collapse !important; }
+
+.urlbarView-row[has-action="true"] .urlbarView-action {
+    margin-left: 4px !important;
+    padding: 2px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    border-radius: 0px !important;
+    border: 1px solid #000 !important;
+    background: unset !important; }
  
 /* Reduce row paddings to make them more compact */
 .urlbarView-row {
+    min-height: unset !important;
     padding: 0px !important;
     border-radius: 0 !important;
     font-weight: unset !important;
@@ -132,6 +148,10 @@
     font-size: unset !important;
     font-family: Arial, Helvetica, sans-serif !important;
     border-bottom: 0px dotted #000 !important;
+}
+
+.urlbarView-title {
+    width: calc(100%) !important;
 }
 
 .urlbarView-row:first-child {
@@ -143,13 +163,21 @@
 .urlbarView-row[aria-selected="true"],
 .urlbarView-row[aria-selected="true"] .urlbarView-url {
     background: unset !important;
-    background-color: #507eaf !important;
+    background-color: var(--selected) !important;
     color: #ffffff !important;
  }
 
- .urlbarView-row-inner {
-    background-color: transparent !important;
+ .urlbarView-row[aria-selected="true"][has-action="true"] .urlbarView-action,
+ .urlbarView-row[has-action="true"]:hover .urlbarView-action {
+    color:#ffffff !important;
+    border-color: #ffffff !important;
+ }
 
+
+ .urlbarView-row-inner {
+    padding-block: 2px !important;
+    background-color: transparent !important;
+ }
 /*
  .urlbarView-row-inner {
    padding: 0px !important;
