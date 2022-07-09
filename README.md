@@ -75,7 +75,7 @@ Note:
 The Firefox theme should now be installed and will be activated once you close all Firefox sessions and restart Firefox.
 <br><br>
 Addons:<br>
-To get the themed scrollbars in Netscape4_alt, you will need to install an autoconfig script such as the one from autoloader-fx. This will allow theming of web content widgets. The repo can be found here: https://github.com/MrOtherGuy/fx-autoconfig. Note that this is conisdered a security risk as any malicious javascript can be loaded on startup. I would recommend changing the permissions of the JS filder to readonly after installing to mitigate this issue.<br><br>
+To get the themed scrollbars in Netscape4_alt, you will need to install an autoconfig script such as the one from autoloader-fx. This will allow theming of web content widgets. The repo can be found here: https://github.com/MrOtherGuy/fx-autoconfig. Note that this is conisdered a security risk as any malicious javascript can be loaded on Firefox startup. I would recommend changing the permissions of the chrome/JS folder to readonly after installing to mitigate this issue.<br><br>
 
 ##Screenshots<br>
 IE5:<br>
