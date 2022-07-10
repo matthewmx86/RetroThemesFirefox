@@ -1,0 +1,95 @@
+/* remove default tab colors */
+:root {
+   --tab-min-height: 26px !important; }
+  
+   #browser-bottombox {
+     /* 2px on top/bottom padding + 1px for top border: */
+     display: block !important;
+     height: calc(var(--tab-min-height) + 5px) !important;
+     border: 0px solid transparent !important;
+     border-right: 1px solid transparent !important;
+     border-top: 1px solid #404040 !important;
+  }
+  
+  .tab-line {                             /* = light top line in selected tab in Quantum default */
+      display: none !important;
+  }
+  
+  .tab-background {
+     min-height: unset !important;
+     border: transparent !important;
+     background: transparent;
+     color: transparent;
+     opacity: 0.0;
+  }
+  
+  #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"],
+  #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab, .tab-content {
+     border: unset !important;
+  }
+  
+  #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab,
+  #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"] {
+     border: unset !important;
+  }
+  
+  #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab {
+    margin-right: 1px !important;
+    margin-left: 1px !important;
+    border: 3px solid !important;
+    border-image: url("image/toolbarbutton.png") !important;
+    border-image-slice: 3 3 3 3 !important;}
+    
+  #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"],
+  .tabbrowser-tab[visuallyselected="true"] {
+    z-index: 0 !important;
+    margin-right: 1px !important;
+    margin-left: 1px !important;
+    box-shadow: unset !important;
+    border: 3px solid !important;
+    border-image: url("image/toolbarbutton_pressed.png") !important;
+    border-image-slice: 3 3 3 3 !important; }
+  
+  .tab-content {
+     height: calc(var(--tab-min-height) - 3px) !important;
+     padding-left: 8px !important;
+     padding-right: 8px !important;
+  }
+  
+  .tab-content[selected="true"] {
+     box-shadow: unset !important;
+  }
+  
+  .tab-content[selected="true"]:hover {
+     color: #000 !important;
+  }
+  
+  spacer[part=overflow-start-indicator], 
+  spacer[part=overflow-end-indicator] {
+    display: none !important; }
+  
+  .tab-icon-image {
+     filter: sepia(0%) saturate(20%) contrast(100%);
+     margin-left: -3px !important;
+     margin-right: 3px !important;
+  }
+  
+  .tabbrowser-tab stack.tab-stack {
+     margin-top: -2px !important;
+  }
+  
+  .tabbrowser-tab[selected="true"] stack.tab-stack {
+     margin-top: -2px !important;
+  }
+  
+  .tab-icon-image {
+     filter: sepia(0%) saturate(20%) contrast(100%);
+     margin-left: -3px !important;
+     margin-right: 3px !important;
+  }
+  
+  .tab-text {
+    margin-top: -2px !important;
+  
+  }
+  
