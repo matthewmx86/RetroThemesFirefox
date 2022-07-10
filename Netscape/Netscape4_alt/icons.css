@@ -87,7 +87,8 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
 #main-window #library-button > .toolbarbutton-text,
 #main-window #history-panelmenu > .toolbarbutton-text {
   font-family: Arial, Helvetica, sans-serif !important;
-  margin-top: 1px !important;
+  font-size: 16px !important;
+  margin-top: -5px !important;
   display: -moz-box !important;
   margin-left: -3px !important;
   -moz-box-pack: center !important;
@@ -143,6 +144,7 @@ padding: 2px !important;
 /*Bookmark buttons */
 
 #PersonalToolbar toolbarbutton {
+  min-height: unset !important;
   margin-top: -1px !important;
   margin-bottom: -1px !important;
   padding: 3px !important;
@@ -152,9 +154,9 @@ padding: 2px !important;
   border: 3px solid transparent !important;
   /*border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important;*/
-  margin: 0px !important;
-  min-height: 28px !important; 
-  max-height: 28px !important;
+  margin: 0px !important;/*
+  min-height: 28px !important; */
+  max-height: 32px !important;
   background-color: inherit !important;
 }
 
@@ -188,6 +190,11 @@ padding: 2px !important;
   width: 20px !important;
   filter: sepia(0%) saturate(100%) contrast(100%) !important;
   list-style-image: url("image/netscape_history.png") !important;
+}
+
+/* Urlbar action button padding*/
+.urlbar-page-action {
+  padding: 1px !important;
 }
 
 
@@ -353,6 +360,11 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   list-style-image: url("image/netscape_reload.png") !important;
 }
 
+#reload-button,
+#stop-button {
+  margin-top: -1px !important;
+}
+
 #home-button .toolbarbutton-icon {
   list-style-image: url("image/netscape_home.png") !important;
 }
@@ -461,13 +473,13 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 
 
 .tab-content:hover .tab-close-button {
-  height: 18px !important;
-  width: 18px !important;
+  height: 19px !important;
+  width: 19px !important;
   visibility: visible !important;
-  padding: 3px !important;
+  padding: 2px !important;
   background: unset !important;
-  margin-top:  -1px !important;
-  margin-right: -7px !important;
+  margin-top:  2px !important;
+  margin-right: -8px !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important;
@@ -480,8 +492,8 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 }
 
 .tab-content[selected="true"] .tab-close-button {
-  margin-top: -2px !important;
-  margin-right: -7px !important;
+  margin-top: 3px !important;
+  margin-right: -8px !important;
 }
 
 

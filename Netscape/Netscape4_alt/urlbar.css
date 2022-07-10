@@ -1,23 +1,65 @@
 :root {
     --urlbarView-favicon-width: unset !important;
+    --urlbar-height: unset !important;
     --selected: Highlight;
 }
 
+#urlbar,
+#urlbar-background,
+#urlbar-input-container, 
 #urlbar-input {
-    font-family: Arial, Helvetica, sans-serif !important;
+    box-shadow: none !important;
+    animation: none !important;
+    outline: unset !important;
+    border-radius: 0px !important;
+    font-size: unset !important;
+    font-weight: unset !important;
+    font-family: unset !important;
+    height: unset !important;
+    padding: unset !important;
+    margin: unset !important;
+    border: unset !important;
+    height: unset !important;
+    border: none !important;
+    min-height: 24px !important;
+    margin-top: 0px !important; /* < Adjust for padding*/
+}
+
+#urlbar,
+#urlbar[focused="true"] {
+    box-shadow: none !important;
+    border: unset !important;
+    outline: unset !important;
+    padding: 0px !important;
+}
+
+#urlbar-input {
+    margin-top: unset !important;
+    min-height: unset !important;
+    max-height: calc(var(--urlbar-height) -2px) !important;
+}
+
+#remote-control-box {
+    margin-top: 2px !important;
+    min-height: unset !important;
+    height: calc(var(--urlbar-height) + 2px) !important;
 }
 
 /* Disable Megabar Animation */
 #urlbar [role=button] {
-    /*margin-top: -2px !important;
-    border: unset !important;*/
     background-color: inherit !important;
 }
 
 #urlbar-zoom-button {
    background: unset !important;
    margin: unset !important;
-   margin-top: 3px !important;
+}
+
+/* Adjust for smaller bar height, dropdown arrow button border */
+#page-action-buttons {
+    margin-right: 0px !important;
+    min-height: unset !important;
+    max-height: calc(var(--urlbar-height) - 4px) !important;
 }
 
 * [role=button]:hover {
@@ -26,39 +68,24 @@
     background-color: inherit !important;
 }
 
-#urlbar {
-    height: 25px !important;
-    padding: 0px !important;
-}
-
-#urlbar-background,
-#urlbar-background[focused="true"] {
+#urlbar-input-container,
+#urlbar-input-container[focused="true"] {
     outline: none !important;
     border: 1px solid #000 !important;
     border-color: unset !important;
     animation-name: none !important;
     animation: none !important;
     box-shadow: none !important;
-    border: solid !important;
-    border-radius: 0 !important;
     border-width: 2px 26px 2px 2px !important;
     border-image: url("image/combobox4.png") !important;
     border-image-slice: 2 26 2 2 !important; 
-    height: 25px !important;
 }
 
-#main-window[uidensity="compact"] #searchbar {
-    margin-left: 4px !important;
-}
-
-#urlbar[open] > #urlbar-background {
+#urlbar[open] > #urlbar-input-container {
     box-shadow: none !important;
     border-image: url("image/combobox4_pressed.png") !important;
     border-image-slice: 2 26 2 2 !important; 
 }
-
-#page-action-buttons:last-child {
-  margin-right: 24px !important; }
 
 #urlbar-go-button {
     visibility: collapse !important;
@@ -66,27 +93,23 @@
 
 #urlbar,
 #urlbar[breakout][breakout-extend][breakout-extend-animate] {
-    margin-top: 1px !important;
     box-shadow: none !important;
-    font-weight: normal !important;
-    font-family: unset !important;
-    font-weight: unset !important;
     font-size: unset !important;
-    font-weight: normal !important;
-    padding-left: 3px !important; }
+    font-weight: unset !important;
+    font-family: unset !important;
+    font-weight: unset !important; }
 
+/*
 #main-window[uidensity="compact"] #urlbar, #main-window[uidensity="compact"] #urlbar-input-container
 #main-window[uidensity="compact"] #urlbar[breakout][breakout-extend][breakout-extend-animate] {
-    margin-top: -2px !important;
-    padding-left: 3px !important; }
+    margin-top: -2px !important; }
+*/
 
 #urlbar[breakout-extend] {
     box-shadow: none !important;
-    font-weight: normal !important;
     font-family: unset !important;
     font-weight: unset !important;
     font-size: unset !important;
-    font-weight: normal !important;
     top:calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
     left:calc((var(--urlbar-toolbar-width) - var(--urlbar-width)) / 2) !important;
     width:100% !important }
@@ -94,26 +117,22 @@
 #urlbar-input-container,
 #urlbar[breakout-extend] #urlbar-input-container {
     box-shadow: none !important;
-    font-weight: normal !important;
     font-family: unset !important;
     font-weight: unset !important;
     font-size: unset !important;
-    font-weight: normal !important;
-    margin-top: -4px !important;
-    height: 100% !important;
-    padding: 1px!important }
-
+    height: 100% !important; }
+/*
 #main-window[uidensity="compact"] #urlbar-input-container,
 #main-window[uidensity="compact"] #urlbar[breakout-extend] #urlbar-input-container {
     margin-top: -1px !important;
     height: 100% !important;}
-
+*/
 .urlbarView {
     padding: 0px !important;
     margin-top: -1px !important;
     box-shadow: none !important;
     margin-left:0px!important;
-    width:100%!important;
+    width: calc(100% - 0px)!important;
     background-color: #ffffff !important;
     border: 1px solid #000 !important;
 }
@@ -144,9 +163,7 @@
     border-radius: 0 !important;
     font-weight: unset !important;
     font-size: unset !important;
-    font-weight: normal !important;
     font-size: unset !important;
-    font-family: Arial, Helvetica, sans-serif !important;
     border-bottom: 0px dotted #000 !important;
 }
 
@@ -207,7 +224,6 @@
 }
 
 #searchbar {
-    margin-top: -1px !important;
     margin-left: 0px !important;
     animation-name: none !important;
     border: none !important;
@@ -220,6 +236,6 @@
     border-width: 2px 2px 2px 2px !important;
     border-image: url("image/combobox.png") !important;
     border-image-slice: 2 2 2 2 !important; 
-    min-height: 25px !important;
-    height: 25px !important;
+    min-height: 26px !important;
+    height: 26px !important;
 }
