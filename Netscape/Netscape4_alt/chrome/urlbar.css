@@ -22,7 +22,7 @@
     height: unset !important;
     border: none !important;
     min-height: 24px !important;
-    margin-top: 0px !important; /* < Adjust for padding*/
+    margin-top: -1px !important; /* < Adjust for padding*/
 }
 
 #urlbar,
