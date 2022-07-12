@@ -68,6 +68,11 @@
    background-image: linear-gradient(#9fccdf, transparent) !important;
 }
 
+/* Disable secondary tab label due to reduced tab hiight */
+.tab-secondary-label {
+   visibility: collapse !important;
+}
+
 /*
 #tabs-newtab-button {
    border-right: 1px solid #fff !important;
