@@ -1,10 +1,14 @@
+/* TABS: height */
+
+
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
-  padding: 1px !important;
   background-color: inherit !important;
-  background-image: url("image/toolbar.png");
-  padding-top: 2px !important;
+  background-image: url("image/top.png") !important;
+  background-position: left bottom; 
+  padding: 0 !important;
   border: 2px solid !important;
+  border-top: 2px solid !important;
   border-left: 7px solid !important;
   border-image: url("image/toolbar_handle_top.png") !important;
   border-image-slice: 2 2 2 7 !important;
@@ -12,15 +16,15 @@
 
 toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
   -moz-appearance: none !important;
-  margin-bottom: 1px !important;
   background-color: inherit !important;
-  background-image: url("image/toolbar.png");
+  background-image: url("image/bottom.png") !important;
   padding: 1px !important;
   border: 2px solid !important;
   border-left: 7px solid !important;
   border-top: 0px !important;
   border-image: url("image/toolbar_handle.png") !important;
-  border-image-slice: 2 2 2 7 !important; }
+  border-image-slice: 2 2 2 7 !important;
+  margin-bottom: 1px !important; }
 
 #main-window[uidensity="compact"] toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
   margin-bottom: 0px !important;
@@ -47,10 +51,10 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 #main-window[tabsintitlebar="true"] #toolbar-menubar .menubar-text {
   color: #fff !important;
 }
-/*
+
 #TabsToolbar .titlebar-buttonbox-container {
   visibility: collapse !important;
-}*/
+}
 
 #browser {
    border: solid !important;
@@ -61,11 +65,19 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
    border-image-slice: 2 2 2 2 !important; 
 }
 
+#main-window[sizemode="fullscreen"] #browser {
+  border: none !important;
+  margin: unset !important;
+}
+
+#navigator-toolbox toolbar:not(#nav-bar):not(#toolbar-menubar) {-moz-box-ordinal-group:10}
+#TabsToolbar {-moz-box-ordinal-group:1000!important}
+
+
 #TabsToolbar-customization-target {
-  padding-left: 3px !important;
   border: 2px solid #000 !important;
-  border-left: 7px solid !important;
   border-bottom: 0px !important;
+  border-left: 7px solid !important;
   padding-left: 1px !important;
   border-image: url("image/toolbar_handle.png") !important;
   border-image-slice: 2 2 2 7 !important;

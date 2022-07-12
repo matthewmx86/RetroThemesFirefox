@@ -93,6 +93,11 @@ spacer[part=overflow-end-indicator] {
    margin-right: 3px !important;
 }
 
+/* Disable secondary tab label due to reduced tab hiight */
+.tab-secondary-label {
+   visibility: collapse !important;
+}
+
 /*
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-close-button {
   visibility: visible !important;
