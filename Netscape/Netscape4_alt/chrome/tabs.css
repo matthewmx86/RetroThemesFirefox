@@ -55,6 +55,11 @@
      padding-left: 8px !important;
      padding-right: 8px !important;
   }
+
+  /* Disable secondary tab label due to reduced tab hiight */
+.tab-secondary-label {
+   visibility: collapse !important;
+}
   
   .tab-content[selected="true"] {
      box-shadow: unset !important;
