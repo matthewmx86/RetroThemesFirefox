@@ -33,10 +33,8 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
 }
 
 #toolbar-menubar {
-  -moz-appearance: none !important;
-  background-color: inherit !important;
-  background-image: linear-gradient(to right, #efefef,#efefef) !important;
-  color: #000 !important;
+  /*background-color: var(--bg_color) !important;*/
+  color: var(-moz-menubartext) !important;
   padding: 0px !important;
   padding-left: 2px !important;
   border-bottom: 1px solid var(--border_bg) !important;

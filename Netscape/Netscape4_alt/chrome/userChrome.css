@@ -11,5 +11,5 @@
 
 #main-window {
    background-color: var(--bg_color) !important;
-   color: #000 !important;
+   color: var(--fg_color) !important;
 }
