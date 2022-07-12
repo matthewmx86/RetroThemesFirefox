@@ -1,7 +1,8 @@
+@import "colors.css";
+
 :root {
     --urlbarView-favicon-width: unset !important;
     --urlbar-height: unset !important;
-    --selected: Highlight;
 }
 
 #urlbar,
@@ -30,7 +31,7 @@
     box-shadow: none !important;
     border: unset !important;
     outline: unset !important;
-    padding: 0px !important;
+    padding: 1px !important;
 }
 
 #urlbar-input {
@@ -43,6 +44,14 @@
     margin-top: 2px !important;
     min-height: unset !important;
     height: calc(var(--urlbar-height) + 2px) !important;
+}
+
+#urlbar-background {
+    min-height: unset !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+    margin-left: 1px !important;
+    margin-right: 27px !important;
 }
 
 /* Disable Megabar Animation */
@@ -64,14 +73,14 @@
 
 * [role=button]:hover {
     border: unset !important;
-    filter:drop-shadow(0px 0px 1px #266281) !important;
+    filter:drop-shadow(0px 0px 1px var(--selected_bg)) !important;
     background-color: inherit !important;
 }
 
 #urlbar-input-container,
 #urlbar-input-container[focused="true"] {
     outline: none !important;
-    border: 1px solid #000 !important;
+    border: 1px solid var(--border_bg) !important;
     border-color: unset !important;
     animation-name: none !important;
     animation: none !important;
@@ -133,8 +142,9 @@
     box-shadow: none !important;
     margin-left:0px!important;
     width: calc(100% - 0px)!important;
-    background-color: #ffffff !important;
-    border: 1px solid #000 !important;
+    color: var(--menu_fg) !important;
+    background-color: var(--menu_bg) !important;
+    border: 1px solid var(--border_bg) !important;
 }
 
 #main-window[uidensity="compact"] .urlbarView {   
@@ -153,7 +163,7 @@
     padding-left: 4px !important;
     padding-right: 4px !important;
     border-radius: 0px !important;
-    border: 1px solid #000 !important;
+    border: 1px solid var(--border_bg) !important;
     background: unset !important; }
  
 /* Reduce row paddings to make them more compact */
@@ -164,7 +174,7 @@
     font-weight: unset !important;
     font-size: unset !important;
     font-size: unset !important;
-    border-bottom: 0px dotted #000 !important;
+    border-bottom: 0px !important;
 }
 
 .urlbarView-title {
@@ -180,14 +190,14 @@
 .urlbarView-row[aria-selected="true"],
 .urlbarView-row[aria-selected="true"] .urlbarView-url {
     background: unset !important;
-    background-color: var(--selected) !important;
-    color: #ffffff !important;
+    background-color: var(--selected_bg) !important;
+    color: var(--selected_fg) !important;
  }
 
  .urlbarView-row[aria-selected="true"][has-action="true"] .urlbarView-action,
  .urlbarView-row[has-action="true"]:hover .urlbarView-action {
-    color:#ffffff !important;
-    border-color: #ffffff !important;
+    color: var(--selected_fg) !important;
+    border-color: var(--selected_fg) !important;
  }
 
 
@@ -224,6 +234,9 @@
 }
 
 #searchbar {
+    font-weight: unset !important;
+    font-size: unset !important;
+    font-size: unset !important;
     margin-left: 0px !important;
     animation-name: none !important;
     border: none !important;
@@ -232,7 +245,6 @@
     padding: 0px !important; 
     box-shadow: none !important;
     border: solid !important;
-    border-radius: 0 !important;
     border-width: 2px 2px 2px 2px !important;
     border-image: url("image/combobox.png") !important;
     border-image-slice: 2 2 2 2 !important; 

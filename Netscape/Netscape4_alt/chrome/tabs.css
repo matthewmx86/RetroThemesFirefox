@@ -25,6 +25,8 @@
   
   #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"],
   #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab, .tab-content {
+     min-height: unset !important;
+     max-height: calc(var(--tab-min-height) - 2px) !important;
      border: unset !important;
   }
   
@@ -34,11 +36,13 @@
   }
   
   #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab, .tabbrowser-tab {
-    margin-right: 1px !important;
-    margin-left: 1px !important;
-    border: 3px solid !important;
-    border-image: url("image/toolbarbutton.png") !important;
-    border-image-slice: 3 3 3 3 !important;}
+   background-color: var(--button_bg) !important;
+   padding: 0px !important;
+   margin-right: 1px !important;
+   margin-left: 1px !important;
+   border: 3px solid !important;
+   border-image: url("image/toolbarbutton.png") !important;
+   border-image-slice: 3 3 3 3 !important;}
     
   #TabsToolbar:not(:-moz-lwtheme) .tabbrowser-tab[visuallyselected="true"],
   .tabbrowser-tab[visuallyselected="true"] {
@@ -51,15 +55,10 @@
     border-image-slice: 3 3 3 3 !important; }
   
   .tab-content {
-     height: calc(var(--tab-min-height) - 3px) !important;
+     background-color: transparent !important;
      padding-left: 8px !important;
      padding-right: 8px !important;
   }
-
-  /* Disable secondary tab label due to reduced tab hiight */
-.tab-secondary-label {
-   visibility: collapse !important;
-}
   
   .tab-content[selected="true"] {
      box-shadow: unset !important;

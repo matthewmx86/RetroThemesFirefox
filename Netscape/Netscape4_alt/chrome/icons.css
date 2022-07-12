@@ -86,10 +86,9 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
 #main-window #stop-button > .toolbarbutton-text,
 #main-window #library-button > .toolbarbutton-text,
 #main-window #history-panelmenu > .toolbarbutton-text {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: sans-serif !important;
   font-weight: bold !important;
-  font-size: 14px !important;
-  margin-top: -1px !important;
+  font-size: 12px !important;
   display: -moz-box !important;
   margin-left: -3px !important;
   -moz-box-pack: center !important;
@@ -126,11 +125,6 @@ toolbar:not(#TabsToolbar) .toolbarbutton-1[type="menu-button"] toolbarbutton :-m
 padding: 2px !important;
 }
 
-/* Fix text alignment in find button */
-#main-window[uidensity="compact"] #find-button > .toolbarbutton-text {
- margin-top: 2px !important;
-}
-
 /* Reduce color */
 /*
 #nav-bar .toolbarbutton-1 {
@@ -146,33 +140,34 @@ padding: 2px !important;
 
 #PersonalToolbar toolbarbutton {
   min-height: unset !important;
-  margin-top: -1px !important;
-  margin-bottom: -1px !important;
   padding: 3px !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   border: 3px solid transparent !important;
-  /*border-image: url("image/toolbarbutton.png") !important;
-  border-image-slice: 3 3 3 3 !important;*/
-  margin: 0px !important;/*
-  min-height: 28px !important; */
+  margin: 0px !important;
   max-height: 32px !important;
   background-color: inherit !important;
 }
 
 #main-window #PersonalToolbar toolbarbutton:hover {
-  border-radius: 0 !important;
+  background-color: var(--button_bg) !important;
+  border-radius: 2px !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important; }
 
 
 #main-window #PersonalToolbar toolbarbutton:active {
-  border-radius: 0 !important;
+  background-color: var(--button_bg) !important;
+  border-radius: 2px !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton_pressed.png") !important;
-  border-image-slice: 3 3 3 3 !important; 
+  border-image-slice: 3 3 3 3 !important; }
+
+#main-window #PersonalToolbar:hover toolbarbutton .label,
+#main-window #PersonalToolbar:active toolbarbutton .label {
+  background-color: var(--button_bg) !important;
 }
 
 #PersonalToolbar toolbarbutton > .toolbarbutton-icon {
@@ -219,7 +214,7 @@ padding: 2px !important;
 .notification-button:hover {
   color: #000 !important;
   background-color: unset !important;
-  border-radius: 0 !important;
+  border-radius: 2px !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important; 
@@ -248,14 +243,17 @@ padding: 2px !important;
   border-image-slice: 3 3 3 3 !important;*/
    } 
 
-#nav-bar .toolbarbutton-1:not([disabled="true"]):hover {
+#nav-bar .toolbarbutton-1:not(#PanelUI-button .toolbarbutton-1):not([disabled="true"]):hover {
+  background-color: var(--button_bg) !important;
+  border-radius: 2px !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important;
 
 }
 
-#nav-bar .toolbarbutton-1:not([disabled="true"]):active {
+#nav-bar .toolbarbutton-1:not(#PanelUI-button .toolbarbutton-1):not([disabled="true"]):active {
+  background-color: var(--button_bg) !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton_pressed.png") !important;
   border-image-slice: 3 3 3 3 !important;
@@ -405,14 +403,11 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 
 #PanelUI-button, #PanelUI-button:hover {
   margin-right: 1px !important;
-  /*visibility: collapse !important;*/
-  /*background-size: cover !important;*/
+  background-color: unset !important;
   background-image: url("image/netscape.png") !important;
-  /*filter: sepia(0%) saturate(50%) contrast(100%) !important;*/
   background-size: 95% !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  /*border: none !important;*/
 }
 
 #PanelUI-button .toolbarbutton-badge {
@@ -445,7 +440,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 
 #tabs-newtab-button .toolbarbutton-icon {
   margin-top: 1px !important;
-  background: none !important;
+  background-color: var(--button_bg) !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important;
@@ -462,7 +457,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 
 #tabs-newtab-button:active .toolbarbutton-icon,
 #tabs-newtab-button[open="true"] .toolbarbutton-icon {
-  background: unset !important;
+  background-color: var(--button_bg) !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton_pressed.png") !important;
   border-image-slice: 3 3 3 3 !important;
@@ -479,8 +474,8 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
   visibility: visible !important;
   padding: 2px !important;
   background: unset !important;
-  margin-top:  2px !important;
-  margin-right: -8px !important;
+  margin-top:  0px !important;
+  margin-right: -6px !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
   border-image-slice: 3 3 3 3 !important;
@@ -493,8 +488,8 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 }
 
 .tab-content[selected="true"] .tab-close-button {
-  margin-top: 3px !important;
-  margin-right: -8px !important;
+  margin-top: 0px !important;
+  margin-right: -6px !important;
 }
 
 
@@ -516,6 +511,7 @@ toolbar:not(#TabsToolbar) #stop-reload-button[animate] > #reload-button[displays
 #TabsToolbar.browser-toolbar.titlebar-color hbox.toolbar-items hbox#TabsToolbar-customization-target.customization-target toolbarbutton#bookmarks-menu-button.toolbarbutton-1.chromeclass-toolbar-additional.subviewbutton-nav:hover .toolbarbutton-icon,
 #TabsToolbar-customization-target > .chromeclass-toolbar-additional:hover .toolbarbutton-badge-stack,
 #TabsToolbar-customization-target #add-ons-button:hover .toolbarbutton-icon {
+  background-color: var(--button_bg) !important;
   filter: sepia(0%) saturate(100%) contrast(120%) !important;
   border: 3px solid !important;
   border-image: url("image/toolbarbutton.png") !important;
