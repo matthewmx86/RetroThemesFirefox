@@ -1,0 +1,17 @@
+/* Widget themeing */
+@import "icons.css";
+@import "tabs.css";
+@import "statusbar.css";
+@import "toolbars.css";
+@import "urlbar.css"; 
+@import "bookmarkpanel.css";
+@import "librarywin.css";
+@import "findbar.css";
+@import "downloads.css";
+@import "colors.css";
+
+
+#main-window {
+   background-color: var(--bg_color) !important;
+   color: var(--fg_color) !important;
+}

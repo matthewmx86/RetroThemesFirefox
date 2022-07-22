@@ -1,0 +1,105 @@
+/* Main browser window navbar */
+#navigator-toolbox toolbar#nav-bar.browser-toolbar {
+  margin-top: 0px !important;
+  background-color: inherit !important;
+  background-image: url("image/top.png") !important;
+  background-position: left bottom;
+  padding: 1px !important;
+  padding-bottom: 2px !important;
+  border-top: 2px solid !important;
+  border-left: 9px solid !important;
+  border-bottom: 0px solid !important;
+  border-image: url("image/toolbar_handle_top.png") !important;
+  border-image-slice: 2 0 2 9 !important;
+}
+
+/* Bookmarks toolbar */
+toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  min-height: unset !important;
+  -moz-appearance: none !important;
+  background-color: inherit !important;
+  background-image: url("image/bottom.png") !important;
+  padding: 1px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  border: 0px solid !important;
+  border-left: 9px solid !important;
+  border-top: 2px solid !important;
+  border-bottom: 0px !important;
+  border-image: url("image/toolbar_handle.png") !important;
+  border-image-slice: 2 0 2 9 !important; }
+
+#main-window toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme) {
+  margin-bottom: 0px !important;
+}
+
+#toolbar-menubar {
+  /*background-color: var(--bg_color) !important;*/
+  color: var(-moz-menubartext) !important;
+  padding: 0px !important;
+  padding-left: 2px !important;
+  border-bottom: 1px solid var(--border_bg) !important;
+  margin-bottom: 1px !important; }
+
+#main-window[tabsintitlebar="true"] #toolbar-menubar {
+  border: none !important;
+  height: 100% !important;
+  background-image: linear-gradient(to right, #000060,#A1C4E9) !important;
+} 
+
+#main-window[tabsintitlebar="true"] #toolbar-menubar .menubar-text {
+  color: #fff !important;
+}
+
+
+#TabsToolbar .titlebar-buttonbox-container {
+  visibility: collapse !important;
+}
+
+#browser {
+   background-color: var(--bg_color) !important;
+   border: solid !important;
+   border: 0px solid !important;
+   border-color: #585858 !important;
+}
+
+#TabsToolbar {
+  /*margin-top: 1px !important;*/
+  display: block !important;
+  position: absolute !important;
+  bottom: 0px !important;/*var(--tabbar-top) !important;*/
+  width: 100vw !important;
+  -moz-appearance: none !important;
+  background-color: var(--bg_color) !important;
+  border: 0px solid !important;
+  padding-left: 1px !important;
+}
+
+/*
+ #TabsToolbar-customization-target #tabbrowser-arrowscrollbox {
+   padding: 2px !important;
+}
+*/
+
+.notificationbox-stack {
+  padding: 0px !important;
+  border: 0px solid !important;
+  border-top: 2px solid !important;
+  border-left: 9px solid !important;
+  border-image: url("image/toolbar_handle_notif.png") !important;
+  border-image-slice: 2 0 2 9 !important;
+}
+
+.infobar {
+  background-color: inherit !important;
+  border: unset !important;
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
+#TabsToolbar-customization-target {
+  width: 100vw !important;
+}
+/*
+#main-window:not([chromehidden*="toolbar"]) #navigator-toolbox {padding-bottom: var(---height) !important;}
+*/
