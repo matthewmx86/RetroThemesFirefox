@@ -71,3 +71,7 @@ spacer[part=overflow-end-indicator] {
    margin-left: -5px !important;
    margin-right: 3px !important;
 }
+
+#tabs-newtab-button {
+	display: inline !important;
+}
