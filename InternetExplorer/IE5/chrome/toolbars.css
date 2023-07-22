@@ -1,6 +1,5 @@
 /* TABS: height */
 
-
 #nav-bar:not(:-moz-lwtheme) {
   margin-top: 1px !important;
   background-color: inherit !important;
@@ -81,4 +80,10 @@ toolbar:not(#TabsToolbar):not(#toolbar-menubar):not(#nav-bar):not(:-moz-lwtheme)
   padding-left: 1px !important;
   border-image: url("image/toolbar_handle.png") !important;
   border-image-slice: 2 2 2 7 !important;
+}
+
+/* Tabs and menubar background color */
+#titlebar {
+	background-color: var(--toolbar-bgcolor) !important;
+	color: inherit !important;
 }
